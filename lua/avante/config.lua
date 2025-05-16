@@ -430,6 +430,11 @@ M._defaults = {
     auto_approve_tool_permissions = false, -- Default: show permission prompts for all tools
     auto_check_diagnostics = true,
   },
+  prompt_logger = {
+    enabled = true,
+    log_dir = vim.fn.stdpath("cache") .. "/avante_logs",
+    fortune_message_on_success = true, -- make sure you have fortune installed
+  },
   history = {
     max_tokens = 4096,
     carried_entry_count = nil,
